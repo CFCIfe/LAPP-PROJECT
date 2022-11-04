@@ -1,0 +1,3 @@
+// to test connection to the instance
+
+ansible all --key-file ~/.ssh/ansible-key -i inventory -m ping
