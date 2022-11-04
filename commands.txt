@@ -5,3 +5,16 @@ ansible all -m ping
 // list hosts
 
 ansible all --list-hosts
+
+// install package
+
+ansible all -m apt -a name=<package name> --become --ask-become-pass
+
+//update a package
+
+ansible all -m apt -a "name=<package name> state=latest" --become --ask-become-pass
+
+// update all packages
+
+ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
+
