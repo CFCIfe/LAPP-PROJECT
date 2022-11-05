@@ -18,3 +18,7 @@ ansible all -m apt -a "name=<package name> state=latest" --become --ask-become-p
 
 ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
 
+// run playbook
+
+ansible-playbook --ask-become-pass <path to playbook>
+
